@@ -11,42 +11,76 @@
 <body>
 <div class="grid-wrapper">
     <header>
-        <input type="search" name="search" value="search">
-        <i class="fa-solid fa-bell"></i>
-        <img src="./images/cylon-color.png" alt="user icon">
-        <div class="user_name"><p>Charlie Brown</p></div>
-        <img src="./images/cylon-color.png" alt="user icon">
-        <div class="hello"><p>Hi, there</p><p>Charlie Brown @ChBrown</p></div>
-        <button class="btn new">New</button>
-        <button class="btn upload">Upload</button>
-        <button class="btn share">Share</button>
+        <div class="subOne">
+            <div>
+                <label for="site-search"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></label>
+                <input type="search" id="site-search" name="site-search" >
+            </div>
+            <div class="userinfo">
+                <i class="fa-solid fa-bell"></i>
+                <img src="./images/cylon-color.png" alt="user icon">
+                <div class="user_name"><p class="title">Charlie Brown</p></div>
+            </div>
+        </div>
+        <div class="subTwo">
+            <div class="userinfo">
+                <img src="./images/cylon-color.png" alt="user icon">
+                <div class="hello"><p class="title">Hi, there</p><p class="title">Charlie Brown @ChBrown</p></div>
+           </div>
+            <div class="btnHouse">
+                <button class="btn">New</button>
+                <button class="btn">Upload</button>
+                <button class="btn">Share</button>
+            </div>
+
+        </div>
     </header>
     
     <aside class="nav">
         <nav>
-            <div class="dashboard"><img src="./images/website-bw.png"><p>Dashboard</p></div>
+            <div class="dashboard"><i class="fa-regular fa-font-awesome"></i><p class="title">Dashboard</p></div>
+            <br><br>
             <ul>
-                <a href="#"><i class="fa-solid fa-house"></i><li class="home"></li>Home</a>
-                <a href="#"><i class="fa-solid fa-address-card"></i><li class="profile"></li>Profile</a>
-                <a href="#"><i class="fa-solid fa-comment"></i><li class="messages"></li>Messages</a>
-                <a href="#"><i class="fa-solid fa-clock"></i><li class="history"></li>History</a>
-                <a href="#"><i class="fa-solid fa-clipboard"></i><li class="tasks"></li>Tasks</a>
-                <a href="#"><i class="fa-solid fa-people-group"></i><li class="Communities">Communities</li></a>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <li class="home">Home</li>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-address-card"></i>
+                    <li class="profile">Profile</li>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-comment"></i>
+                    <li class="messages">Messages</li>
+                </a>
+                <a href="#"><i class="fa-solid fa-clock"></i>
+                    <li class="history">History</li>
+                </a>
+                <a href="#"><i class="fa-solid fa-clipboard"></i>
+                    <li class="tasks">Tasks</li>
+                </a>
+                <a href="#"><i class="fa-solid fa-people-group"></i>
+                    <li class="groups">Groups</li>
+                </a>
             </ul>
-
+            <br><br>
             <ul>
-                <a href="#"><i class="fa-solid fa-gears"></i><li class="settings">Settings</li></a>
-                <a href="#"><i class="fa-solid fa-question"></i><li class="support">Support</li></a>
-                <a href="#"><i class="fa-solid fa-shield-halved"></i><li class="privacy">Privacy</li></a>
+                <a href="#"><i class="fa-solid fa-gears"></i>
+                    <li class="settings">Settings</li>
+                </a>
+                <a href="#"><i class="fa-solid fa-question"></i>
+                    <li class="support">Support</li>
+                </a>
+                <a href="#"><i class="fa-solid fa-shield-halved"></i>
+                    <li class="privacy">Privacy</li>
+                </a>
             </ul>
         </nav>
     </aside>
     
     <main>
-
+        <h3 class="title">Your Projects</h3>
          <div class="projects">
-
-            <p>Your Projects</p>
             <div class="card">
                 <h3>Cool Project</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum minima dicta commodi sit, enim iure ut eligendi voluptate perferendis eos!</p>
@@ -94,13 +128,30 @@
     </main>
 
     <aside class="updates">
+        <h3 class="title">Announcements</h3>
         <div class="announcements">
-            <h3>Announcements</h3>
-            <div></div>
-        </div>
-        <div class="trending">
-            <h3>Trending</h3>
+            
             <div>
+                <p><h4>Site Maintenance</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit minima, provident dolor accusantium et?</p>
+            </div>
+
+            <div>
+                
+                <p><h4>Site Maintenance</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit minima, provident dolor accusantium et?</p>
+            </div>
+
+            <div>
+                <p><h4>Site Maintenance</h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit minima, provident dolor accusantium et?</p>
+            </div>
+
+        </div>
+    
+
+    </aside>
+
+    <footer>
+        <h3 class="title">Trending</h3>
+        <div class="trending">
                 <div>
                     <img src="./images/batman-color.png" alt="User batman logo">
                     <h3>@ussif</h3>
@@ -121,12 +172,8 @@
                     <h3>@ChBrown</h3>
                     <p>Super Cool App</p>
                 </div>
-            </div>
+            
         </div>
-    </aside>
-
-    <footer>
-
     </footer>
 </div>
 </body>
